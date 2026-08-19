@@ -33,6 +33,6 @@ build/
 .vscode/
 
 
-application.yml
+application.yaml
 *.class
 *.jar

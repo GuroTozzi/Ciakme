@@ -26,7 +26,7 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(UserResponse.from(user));
     }
 
-    @GetMapping("/id")
+    @GetMapping("/{id}")
     public ResponseEntity<UserResponse> geById(@PathVariable UUID id){
         Optional<User> userFound = userService.findByID(id);
 

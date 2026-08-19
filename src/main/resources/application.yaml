@@ -31,3 +31,7 @@ logging:
     com.ciakme: DEBUG
     org.springframework.security: DEBUG
     org.flywaydb: DEBUG
+
+jwt:
+  secret: "ciakme-super-secret-key-must-be-at-least-32-characters-long"
+  expiration-ms: 86400000  # 24 ore in millisecondi
